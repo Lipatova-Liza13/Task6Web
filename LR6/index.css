@@ -1,0 +1,8 @@
+#form {
+    margin: 0 auto;
+    width: 500px;
+    padding: 1em;
+    border: 1px solid rgb(126, 124, 44);
+    background-color: rgb(255, 249, 164);
+    border-radius: 2em;
+  }

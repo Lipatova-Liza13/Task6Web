@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lipatova LR5</title>
+    <link rel="stylesheet" href=index.css>
+</head>
+
+<body onload="getDaysFromNewYear()">
+    <form id="form" method="post" onsubmit="return false">
+        <p><b>Кількість тижнів що пройшли від мого дня народження - 13.07.2001</b><br>
+            <output id="outputWeeksFromBirthDay">0</output>
+            <input type="submit" value="Дізнатися" id="submit" onclick="getWeeksAfterBirthDay()">
+            <input type="reset" value="Сховати" id="reset">
+            <br>
+            <br>
+    </form>
+
+    <form id="form" method="post" onsubmit="return false">
+        <p><b>Input field for B task</b><br>
+            <input id="input" type="text" size="30">
+            <div>
+                <a id="hyperlink" title="Tap on me" href="a_title.html">Гіперпосилання</a>
+            </div>
+    </form>
+
+</body>
+
+<script type="text/javascript" src="lr6.js"></script>
+<script>
+    window.addEventListener(`keydown`, event => {
+        js_event();
+    }, false);
+
+    function js_event() {
+        printToConsoleDataFromBeginingOfTheDay()
+    }
+
+    document.getElementById("hyperlink").addEventListener("click", function(e){
+            e.preventDefault();
+            alert("Февраль/Апрель/Июнь/Сентябрь/Ноябрь");
+        });
+</script>
+
+</html>
